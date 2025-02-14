@@ -1,0 +1,121 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+  }
+  
+  .columns{
+    display:flex;
+    flex-wrap:nowrap;
+    width:90%;
+    justify-content: center;
+    gap:10px;
+    margin:20px;
+    border: 2px solid blue;
+    padding:10px;
+    background:#00afff;
+    height:500px;
+    z-index:9;
+  }
+  .column{
+    display:flex;
+    flex: 1 1 33%;
+    background:#aaa;
+    padding:5px; 
+    flex: 1;
+    flex-direction: column;
+    min-width: 240px;
+    max-width: 340px;
+  }
+  .form {
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    gap:5px;
+  }
+  
+  .tiket{
+      clear: both;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      max-width: 100%;
+      margin: 0 0 7px;
+      color: #333;
+      font-size: 13px;
+      max-height: 65px;
+      letter-spacing: 0;
+      line-height: 16px;
+      padding-right: 24px;
+      text-overflow: ellipsis;
+  }
+   
+.tikets-container{
+    flex: 1;
+    padding: 1px 3px 0 1px;
+    margin: 0 -2px 0 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    opacity: 1;
+    z-index: 99;
+    height:100%;
+    } 
+
+  .tiket-group{
+    position:relative;
+    padding: 10px 35px 0 12px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 0 7px;
+  }
+  .tiket-group.dragged{
+    min-width: 235px;
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+    background: #fff;
+    border:1px solid rgb(53, 62, 145);
+  }
+  .closeBtn{
+    display:none;
+    position:absolute;
+    cursor:pointer;
+    top:3px;
+    right:5px;
+   
+   }
+  .hidden{
+    display:block;
+  }
+    
+  .btn{
+     background: none;
+     border: none;
+     cursor:pointer;
+     align-self: start;
+     margin-bottom:5px;
+  }
+  .btn:hover, .btn:focus{
+    border-bottom:1px solid #000;
+    cursor:pointer;
+  }
+  .btnSubmit{
+    background:green;
+    height:30px;
+    border:none;
+    margin-right:0;
+    color:#fff;
+    border-radius:5px; 
+    cursor:pointer;
+  }
+  .btnReset{
+    background:green;
+    height:30px;
+    width:30px;
+    border:none;
+    color:#fff;
+    border-radius:5px; 
+    cursor:pointer;
+  }
+  
